@@ -1,5 +1,7 @@
 body{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 header{
@@ -64,6 +66,62 @@ header{
     border-radius: 25px;
 }
 
+.container-pai{
+    margin: 0;
+    padding: 100px 20px;
+    color: white;
+    background-color: rgb(2, 52, 52);
+}
+
+.container-flex-filho{
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+.componente-texto{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.texto-componente{
+    border: solid 10px rgb(255, 255, 255);
+    border-radius: 20px;
+    width: 400px;
+    height: 500px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    transition: 1s;
+}
+.texto-componente > a{
+    background-color: white;
+    padding: 20px;
+}
+.texto-componente:hover{
+    background-color: darkblue;
+    border:solid 10px rgb(8, 8, 87);
+}
+.texto-componente > h1{
+    font-size: 22px;
+}
+
+.texto-componente > p{
+    font-size: 15px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: lighter;
+}
+
+
+
+
+
+
+
+
 
 @media only screen and (max-width: 1000px) {
     .container-flex{
@@ -80,6 +138,7 @@ header{
     }
     
   }
+
 
 @media only screen and (max-width: 800px) {
 
